@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang ="uk">
+
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Student accounting system</title>
+        <meta name="description"
+              value="Accounting system of students of educational institution"/>
+
+        <!--Include Styles -->
+        <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="./css/main.css">
+
+    </head>
+
+
+    <body>
+
+        <! --Start Container-->
+        <div class="container">
+
+            <!--Start Header-->
+            <div class="row" id="header">
+
+                <!--Logo-->
+                <div class="col-xs-8">
+                    <h1>Students accounting service</h1>
+                </div>
+
+                <!--Groups Selector-->
+                <div class="col-xs-4" id="group-selector">
+                    <strong>Group:</strong>
+                    <select>
+                        <option value="">All students</option>
+                        <option value="">MtM-21, Vitaliu</option>
+                        <option value="">MtM-21, Andriu</option>
+                    </select>
+                </div>
+             </div>
+            <!--End Header-->
+
+            <!--Start SubHeader-->
+            <div class="row" id="sub-header">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#">Students</a> </li>
+                        <li role="presentation"><a href="#">Visiting</a> </li>
+                        <li role="presentation"><a href="#">Groups</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End SubHeader-->
+
+            <!--Start Main Page Content-->
+            <div class="row" id="content-columns">
+                <div class="col-xs-12" id="content-column">
+
+                    <!--Status Message-->
+                    <div class="alert alert-warning">Changes canceled</div>
+
+                    <h2>Students Base</h2>
+
+                    <!--Add Student Button-->
+                    <a class="btn btn-primary" href="#">Add Student</a>
+
+                    <!--Start Students Listing-->
+                    <table class="table table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th><a href="">№</a> </th>
+                            <th>Photo</th>
+                            <th><a href="">Surname &uarr;</a></th>
+                            <th><a href="#"> Name</a></th>
+                            <th><a href="#">№ ticket</a> </th>
+                            <th>Moves</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img class="img-circle" height="30" width="30" src="./img/1.jpeg"></td>
+                            <td><a title="Change" href="#">Korost</a> </td>
+                            <td><a title="Change" href="#">Andriu</a></td>
+                            <td>21313</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="gropdown">Moves<span class="caret"></span> </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Visiting</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Change</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Delete</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img class="img-circle" height="30" width="30" src="./img/2.jpeg"></td>
+                            <td><a title="Change" href="#">Cheker</a> </td>
+                            <td><a title="Change" href="#">Bohdan</a></td>
+                            <td>5353</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="gropdown">Moves<span class="caret"></span> </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Visiting</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Change</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Delete</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img class="img-circle" height="30" width="30" src="./img/3.jpeg"></td>
+                            <td><a title="Change" href="#">Kudiev</a> </td>
+                            <td><a title="Change" href="#">Petr</a></td>
+                            <td>456</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="gropdown">Moves<span class="caret"></span> </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Visiting</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Change</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">Delete</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <nav>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a> </li>
+                            <li><a href="#">1</a> </li>
+                            <li class="active"><a href="#">2</a> </li>
+                            <li><a href="#">3</a> </li>
+                            <li><a href="#">4</a> </li>
+                            <li><a href="#">5</a> </li>
+                            <li><a href="#">&raquo;</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--End Main Page Content-->
+
+            <!--Start Footer-->
+            <div class="row" id="footer">
+                <div class="col-xs-12">
+                    &copy; 2019 Students accounting service
+                </div>
+            </div>
+            <!--End Footer-->
+
+
+        </div>
+        <!--End Conteiner-->
+
+    <!-- Javascrit Section-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    </body>
+
+
+</html>
